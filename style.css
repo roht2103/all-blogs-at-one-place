@@ -1,0 +1,115 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+     background-image: url('david-pisnoy-RiGGe25WUw4-unsplash.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height:100vh ;
+     /* background-color: #D8FD00; */
+     padding: 2%;
+
+}
+
+.shadow{
+    box-shadow: -30px 30px 20px rgba(1,2,1,0.6);
+}
+
+nav{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+justify-content:space-around ;
+    padding: 5rem;
+    display: flex;
+    padding-left: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+    min-height: 13vh;
+    background-image: url('demo image.jpg');
+    /* font-family: 'Poppins', sans-serif; */
+
+}
+
+.home-link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+
+.logo{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-right: 8%;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    outline: 2px solid #fff;
+    padding: 30px 60px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.button:hover{
+    color:#8918d5;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(50deg);
+    z-index: -1;
+    transition: width 0.5s
+}
+
+.button:hover::before{
+    width: 350px;
+}
